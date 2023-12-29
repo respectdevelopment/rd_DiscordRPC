@@ -5,7 +5,7 @@ rd.UpdateTime = 60000 -- 60000 = 60 seconds
 
 rd.Template = {
  
-    Text = '{PlayerName} {FPS} - {Players} | ID: {ID}',
+    Text = '{PlayerName} - {Players} | ID: {ID}',
     AllowFPScounter = false,
 
     -- {ID} = Show Player ID
