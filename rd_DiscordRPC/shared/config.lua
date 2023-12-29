@@ -1,20 +1,17 @@
 rd = {}
 
 rd.DiscordApplicationID = YourApplicationID
-rd.UpdateTime = 1000 -- 60000 = 60 seconds
-rd.Debug = false
+rd.UpdateTime = 60000 -- 60000 = 60 seconds
 
 rd.Template = {
  
-    Text = '{PlayerName} - {Players} | ID: {ID}',
+    Text = '{PlayerName} {FPS} - {Players} | ID: {ID}',
+    AllowFPScounter = false,
 
-    
-    -- Turn on/off "placeholders" for more optimalization (disable unused function)
-    ID = true, -- {ID} = Show player ID 
-    PlayerName = true, -- {PlayerName} = Show Player name 
-    Players = true, -- {Players} = Show active player count/max slots
-    FPS = false, -- {FPS} = Show player FPS (After join, you need wait to UpdateTime to update the fps! Default fps is 0.)
-
+    -- {ID} = Show Player ID
+    -- {PlayerName} = Show Player Name
+    -- {Players} = Show Player Count/Show server max slots
+    -- {FPS} = Show Player FPS !! MUST SET AllowFPScounter -> true
 }
 
 rd.BigAsset = {
