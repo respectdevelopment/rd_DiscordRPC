@@ -40,7 +40,6 @@ Citizen.CreateThread(function()
         end)
 
         SetRichPresence(result)
-        print(result)
 
         Citizen.Wait(rd.UpdateTime)
     end
