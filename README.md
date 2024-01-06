@@ -2,13 +2,12 @@
 
 <h1 align="center">Discord RPC</h1>
 
-![imagec](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/8dc66820-bc71-4f1d-b617-cc1facb33bad)
-![image](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/d464ab5e-2441-415a-b51d-e8a2d733bdad)
-
-
 ###
 
 <p align="center">Free and advanced discord rpc script.</p>
+
+![imagec](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/8dc66820-bc71-4f1d-b617-cc1facb33bad)
+
 
 ###
 
