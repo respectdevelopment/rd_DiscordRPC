@@ -1,19 +1,33 @@
-# RESPECT DISCORD RPC
-Free and advanced discord rpc script
+<br clear="both">
 
-![imagec](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/1c2ff10b-2e9a-4b29-b50c-cf66e3e3bf9d)
+<h1 align="center">Discord RPC</h1>
 
-![image](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/7c9de619-4e88-486a-a0cb-518d355e7afb)
+![imagec](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/8dc66820-bc71-4f1d-b617-cc1facb33bad)
+![image](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/d464ab5e-2441-415a-b51d-e8a2d733bdad)
 
-# FEATURES
 
-- Show player id, max connections players, online players, player FPS
-- Simple edit message in config via replacements
-- Optimalization to 0.0ms
+###
 
-# WIKI (WITH INSTALLATION PROCESS)
-https://app.gitbook.com/o/5wSr7ViIyiqwgIP5I6G3/s/bcsebdI54iFXbSd2K9Nt/free-script/discord-rpc
+<p align="center">Free and advanced discord rpc script.</p>
 
-# DISCORD SERVER FOR SUPPORT
-https://discord.gg/zyMrgxtBtM
+###
 
+<br clear="both">
+
+<h1 align="center">Features</h1>
+
+###
+
+<p align="center">Show player id, max connections players, online players, player FPS counter<br>Simple edit message in config via replacements<br>Optimalized to 0.0ms</p>
+
+###
+
+<br clear="both">
+
+<h1 align="center">Support</h1>
+
+###
+
+<p align="center">https://discord.gg/4HyX4KUdmB</p>
+
+###
