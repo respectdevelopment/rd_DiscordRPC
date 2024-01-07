@@ -8,7 +8,7 @@ if Config.UpdateCheck then
         local Version = LoadResourceFile(GetCurrentResourceName(), "version")
         
         if Version == ResponseVersion then
-            print("^2[✔] DiscordRPC have latest version!")
+            print("^2[INFO] DiscordRPC have latest version!")
         else
             print("\n^1----------------------------------------------------------------------------------^7")
             print("^5DiscordRPC\n\n^0Latest version is: ^2"..ResponseVersion.."\n^7Your version: ^1"..Version.."^7\n\nUpdate from: ^5https://github.com/respectdevelopment/rd_DiscordRPC")
