@@ -19,7 +19,7 @@ client_scripts {
 }
 
 server_scripts {
-    'client/main.lua',
+    'server/updater.lua',
 }
 
 
