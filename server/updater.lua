@@ -1,3 +1,5 @@
+SetConvarReplicated("sv_maxclients", "true")
+
 if Config.UpdateCheck then
     
     CreateThread(function()
