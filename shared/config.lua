@@ -2,7 +2,6 @@ Config = {
 
     ApplicationID = 1193592918515138732,
     UpdateTime = 60, -- In Seconds
-    ServerSlots = 48,
     UpdateCheck = true,
 
 
