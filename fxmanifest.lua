@@ -4,22 +4,23 @@ game 'gta5'
 
 -- {{Resouce Information}}
 author 'Respect Development'
-description 'Best discord rpc script.'
-version '1.1'
+description 'DiscordRPC'
+version '1.2'
 
 -- {{Manifest}} --
 lua54 'yes'
 
 shared_scripts {
-    'shared/config.lua'
+    '@es_extended/imports.lua',
+    'Config.lua'
 }
 
 client_scripts {
-    'client/main.lua',
+    'Client/main.lua',
 }
 
 server_scripts {
-    'server/updater.lua',
+    'Server/main.lua',
 }
 
 
