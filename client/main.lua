@@ -8,7 +8,7 @@ end
 
 Citizen.CreateThread(function()
     while true do
-        Wait(1000)
+        Wait(Config.UpdateTime * 1000)
         
         local Slots = GetConvarInt("sv_maxClients", 48)
         local OnlinePlayers = GetActivePlayers()
