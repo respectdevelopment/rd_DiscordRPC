@@ -1,6 +1,7 @@
 Config = {
 
-    Framework = "ESX", -- ESX/QBCORE : Used for character name : With standlone your character name options will not work!
+    Framework = "ESX", -- ESX/QBCORE
+
     ApplicationID = 1193592918515138732, -- Your Application Id (Join discord if you dont know how to change)
     UpdateTime = 60, -- In Seconds (For best optimalization keep 60 seconds.)
 
@@ -42,8 +43,8 @@ Config = {
     },
 
     SecondButton = {
-        Enabled = false,
+        Enabled = true,
         Text = 'Github', -- Second button text
-        Link = 'https://discord.gg/aPjh2APfzH' -- Second button link
+        Link = 'https://github.com/respectdevelopment' -- Second button link
     }
 }
