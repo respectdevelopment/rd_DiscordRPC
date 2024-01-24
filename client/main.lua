@@ -5,11 +5,12 @@ Citizen.CreateThread(function()
         local OnlinePlayers = GetActivePlayers()
         local id = GetPlayerServerId(PlayerId())
         local Player = GetPlayerName(PlayerId())
+        local maxPlayers = GetConvarInt("sv_maxclients", 48)
 
         local template = Config.Text
 
         local replacements = {
-            ["{Players}"] = #OnlinePlayers .. "/" ..Config.ServerSlots,
+            ["{Players}"] = #OnlinePlayers .. "/" ..maxPlayers,
             ["{ID}"] = id,
             ["{PlayerName}"] = Player,
         }
