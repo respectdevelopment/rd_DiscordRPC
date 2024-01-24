@@ -4,7 +4,7 @@
 
 ###
 
-<p align="center">Free and advanced discord rpc script.</p>
+<p align="center">FiveM DiscordRPC Script</p>
 
 ###
 
