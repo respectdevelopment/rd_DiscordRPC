@@ -14,7 +14,7 @@
 
 ###
 
-<p align="center">Show player count on server<br>Show player name<br>Show player ID<br>Show player character First & Last Name<br>Show player sex <br>Show player location (street / area)<br>Show player health<br>Show player job</p>
+<p align="center">Show player count on server<br>Show player name<br>Show player ID<br>Show player character First & Last Name<br>Show player gender <br>Show player location (street / area)<br>Show player health<br>Show player job</p>
 
 ###
 
