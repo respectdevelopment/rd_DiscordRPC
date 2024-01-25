@@ -17,7 +17,7 @@ Config = {
     -- CHARACTER
     -- {PlayerCharacterFirstName} : Show Player Character First Name
     -- {PlayerCharacterLastName} : Show Player Character Last Name
-    -- {PlayerCharacterSex} : Show Player Character Sex (Male/Female)
+    -- {PlayerCharacterGender} : Show Player Character Sex (Male/Female)
     -- {PlayerCharacterJob} : Show Player Character Job
     -- {PlayerCharacterHealth} : Show Player Character Health
 
