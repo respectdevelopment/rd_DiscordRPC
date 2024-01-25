@@ -24,13 +24,13 @@ Citizen.CreateThread(function()
             local PlayerCharacterLastName = ESX.PlayerData.lastName
             local PlayerCharacterJob = ESX.PlayerData.job.name
     
-            local sex = ESX.PlayerData.sex
-            local PlayerCharacterSex = sexx
+            local Gender = ESX.PlayerData.sex
+            local PlayerCharacterGender = genderr
     
-            if sex == "m" then
-                sexx = "Male"
+            if Gender == "m" then
+                genderr = "Male"
             else 
-                sexx = "Female"
+                genderr = "Female"
             end
             
             local template = Config.Text
@@ -41,7 +41,7 @@ Citizen.CreateThread(function()
                 ["{PlayerName}"] = Player,
                 ["{PlayerCharacterFirstName}"] = PlayerCharacterFirstName,
                 ["{PlayerCharacterLastName}"] = PlayerCharacterLastName,
-                ["{PlayerCharacterSex}"] = PlayerCharacterSex,
+                ["{PlayerCharacterGender}"] = PlayerCharacterGender,
                 ["{PlayerCharacterJob}"] = PlayerCharacterJob,
                 ["{PlayerCharacterStreet}"] = Street,
                 ["{PlayerCharacterArea}"] = Area,
@@ -67,13 +67,13 @@ Citizen.CreateThread(function()
             local PlayerCharacterLastName = Data.charinfo.lastname
             local PlayerCharacterJob = Data.job.label
     
-            local sex = Data.charinfo.gender
-            local PlayerCharacterSex = sexx
+            local Gender = Data.charinfo.gender
+            local PlayerCharacterGender = Genderr
     
-            if sex == 0 then
-                sexx = "Male"
+            if Gender == 0 then
+                Genderr = "Male"
             else 
-                sexx = "Female"
+                Genderr = "Female"
             end
             
             local template = Config.Text
@@ -84,7 +84,7 @@ Citizen.CreateThread(function()
                 ["{PlayerName}"] = Player,
                 ["{PlayerCharacterFirstName}"] = PlayerCharacterFirstName,
                 ["{PlayerCharacterLastName}"] = PlayerCharacterLastName,
-                ["{PlayerCharacterSex}"] = PlayerCharacterSex,
+                ["{PlayerCharacterGender}"] = PlayerCharacterGender,
                 ["{PlayerCharacterJob}"] = PlayerCharacterJob,
                 ["{PlayerCharacterStreet}"] = Street,
                 ["{PlayerCharacterArea}"] = Area,
