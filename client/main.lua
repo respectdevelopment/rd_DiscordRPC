@@ -22,7 +22,7 @@ Citizen.CreateThread(function()
         if Config.Framework == "ESX" then
             local PlayerCharacterFirstName = ESX.PlayerData.firstName
             local PlayerCharacterLastName = ESX.PlayerData.lastName
-            local PlayerCharacterJob = ESX.PlayerData.job.name
+            local PlayerCharacterJob = ESX.PlayerData.job.label
     
             local Gender = ESX.PlayerData.sex
             local PlayerCharacterGender = genderr
