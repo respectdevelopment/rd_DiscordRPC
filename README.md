@@ -24,7 +24,7 @@
 
 ###
 
-<p align="center">https://discord.gg/4HyX4KUdmB</p>
+<p align="center">https://discord.respectdevelopment.eu</p>
 
 ###
 ![tjtjzjtj](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/b223fe3a-81ba-45e8-bf56-de17452e3691)
