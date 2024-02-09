@@ -4,7 +4,7 @@
 
 ###
 
-<p align="center">FiveM DiscordRPC Script</p>
+<p align="center">FiveM DiscordRPC Script<br><br>ESX/QBCORE</p>
 
 ###
 
@@ -14,7 +14,7 @@
 
 ###
 
-<p align="center">Show player id, max connections players, online players, player FPS counter<br>Simple edit message in config via replacements<br>Optimalized to 0.0ms</p>
+<p align="center">Show player count on server<br>Show player name<br>Show player ID<br>Show player character First & Last Name<br>Show player gender <br>Show player location (street / area)<br>Show player health<br>Show player job</p>
 
 ###
 
@@ -24,6 +24,10 @@
 
 ###
 
-<p align="center">https://discord.gg/4HyX4KUdmB</p>
+<p align="center">https://discord.respectdevelopment.eu</p>
 
 ###
+![tjtjzjtj](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/b223fe3a-81ba-45e8-bf56-de17452e3691)
+![imagetjtjj](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/500b0180-e14b-439a-a36d-5b68d95ede2c)
+![tjtjztjj](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/c493ed62-4b62-4516-8752-a3f148a70f0c)
+![tjtjzj](https://github.com/respectdevelopment/rd_DiscordRPC/assets/143709835/9ccdf510-18a8-4574-8190-bce38cd4ed50)

@@ -1,50 +1,70 @@
-Config = {
+Config = {}
 
-    Framework = "ESX", -- ESX/QBCORE
+Config.Framework = "ESX" -- ESX/QBCORE
 
-    ApplicationID = 1193592918515138732, -- Your Application Id (Join discord if you dont know how to change)
-    UpdateTime = 60, -- In Seconds (For best optimalization keep 60 seconds.)
+Config.ApplicationID = 1193592918515138732 -- Your Application Id
+Config.UpdateTime = 2 -- 
 
-    UpdateCheck = true,
+Updater = true
 
-    -- SERVER
-    -- {ServerPlayers} : Show count all conected players
+-- SERVER
+-- {ServerPlayers} : Show count all conected players
 
-    -- PLAYER
-    -- {PlayerID} : Show Player ID
-    -- {PlayerName} : Show Player NAME
+-- PLAYER
+-- {PlayerID} : Show Player ID
+-- {PlayerName} : Show Player NAME
 
-    -- CHARACTER
-    -- {PlayerCharacterFirstName} : Show Player Character First Name
-    -- {PlayerCharacterLastName} : Show Player Character Last Name
-    -- {PlayerCharacterSex} : Show Player Character Sex (Male/Female)
-    -- {PlayerCharacterJob} : Show Player Character Job
-    -- {PlayerCharacterHealth} : Show Player Character Health
+-- CHARACTER
+-- {PlayerCharacterFirstName} : Show Player Character First Name
+-- {PlayerCharacterLastName} : Show Player Character Last Name
+-- {PlayerCharacterGender} : Show Player Character Sex (Male/Female)
+-- {PlayerCharacterJob} : Show Player Character Job
+-- {PlayerCharacterHealth} : Show Player Character Health
 
-    -- {PlayerCharacterStreet} = Show name of the street where the player is currently located (Bridge Street, ...)
-    -- {PlayerCharacterArea} = Show name of the area where the player is currently located (East Vinevwood, ...)
+-- {PlayerCharacterStreet} = Show name of the street where the player is currently located (Bridge Street, ...)
+-- {PlayerCharacterArea} = Show name of the area where the player is currently located (East Vinevwood, ...)
 
-    Text = '{PlayerName} - {ServerPlayers} | ID: {PlayerID}',
+Config.Text = '{PlayerName} - {ServerPlayers} | ID: {PlayerID}'
+
+Config.Assets = {
+
 
     BigAsset = {
         ID = 'respectdevelopment_big', -- Big asset ID for name in the discord developer portal
         Text = 'discord.gg/4TvVtJ8Yhk' -- Big asset text (showed in the discord)
     },
-
+    
     SmallAsset = {
         ID = 'respectdevelopment_small', -- Small asset ID for name in the discord developer portal
         Text = 'Respect Development' -- Small asset text (showed in the discord)
-    },
+    }
+
+}
+
+Config.Buttons = {
 
     FirstButton = {
-        Enabled = true,
-        Text = 'Discord', -- First button link
-        Link = 'https://discord.gg/aPjh2APfzH' -- Second button link
-    },
 
-    SecondButton = {
         Enabled = true,
-        Text = 'Github', -- Second button text
-        Link = 'https://github.com/respectdevelopment' -- Second button link
+        Text = 'Discord', 
+        Link = 'https://discord.gg/aPjh2APfzH' 
+
+    },
+    
+    SecondButton = {
+
+        Enabled = true,
+        Text = 'Github', 
+        Link = 'https://github.com/respectdevelopment' 
+
     }
+
+}
+
+Config.Strings = {
+
+    Male = "Male",
+    Female = "Female",
+    Dead = "Dead"
+
 }
