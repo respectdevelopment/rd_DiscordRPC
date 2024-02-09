@@ -14,12 +14,21 @@ Updater = true
 -- {PlayerID} : Show Player ID
 -- {PlayerName} : Show Player NAME
 
+<<<<<<< HEAD
 -- CHARACTER
 -- {PlayerCharacterFirstName} : Show Player Character First Name
 -- {PlayerCharacterLastName} : Show Player Character Last Name
 -- {PlayerCharacterGender} : Show Player Character Sex (Male/Female)
 -- {PlayerCharacterJob} : Show Player Character Job
 -- {PlayerCharacterHealth} : Show Player Character Health
+=======
+    -- CHARACTER
+    -- {PlayerCharacterFirstName} : Show Player Character First Name
+    -- {PlayerCharacterLastName} : Show Player Character Last Name
+    -- {PlayerCharacterGender} : Show Player Character Sex (Male/Female)
+    -- {PlayerCharacterJob} : Show Player Character Job
+    -- {PlayerCharacterHealth} : Show Player Character Health
+>>>>>>> 8b84b31ee7454540fa360e876b9d1ba690f07a0b
 
 -- {PlayerCharacterStreet} = Show name of the street where the player is currently located (Bridge Street, ...)
 -- {PlayerCharacterArea} = Show name of the area where the player is currently located (East Vinevwood, ...)
