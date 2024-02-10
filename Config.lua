@@ -3,7 +3,7 @@ Config = {}
 Config.Framework = "ESX" -- ESX/QBCORE
 
 Config.ApplicationID = 1193592918515138732 -- Your Application Id
-Config.UpdateTime = 2 -- 
+Config.UpdateTime = 60
 
 Updater = true
 
