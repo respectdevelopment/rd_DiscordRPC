@@ -5,7 +5,7 @@ game 'gta5'
 -- {{Resouce Information}}
 author 'Respect Development'
 description 'Discord RPC'
-version '1.3'
+version '1.4'
 
 -- {{Manifest}} --
 lua54 'yes'

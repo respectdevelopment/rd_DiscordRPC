@@ -26,6 +26,13 @@ Citizen.CreateThread(function()
             else
                 Health = GetEntityHealth(PlayerPedId()) - 100
             end
+
+            local job = Config.Strings.Loading
+
+            if ESX.PlayerData.job ~= null then
+                print("čau")
+                job = ESX.PlayerData.job.label
+            end
   
             local replacements = {
                 ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
@@ -34,7 +41,7 @@ Citizen.CreateThread(function()
                 ["{PlayerCharacterFirstName}"] = ESX.PlayerData.firstName,
                 ["{PlayerCharacterLastName}"] = ESX.PlayerData.lastName,
                 ["{PlayerCharacterGender}"] = Gender,
-                ["{PlayerCharacterJob}"] = ESX.PlayerData.job.label,
+                ["{PlayerCharacterJob}"] = job,
                 ["{PlayerCharacterStreet}"] = GetStreetNameFromHashKey(GetStreetNameAtCoord(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
                 ["{PlayerCharacterArea}"] = GetLabelText(GetNameOfZone(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
                 ["{PlayerCharacterHealth}"] = Health,
@@ -66,7 +73,7 @@ Citizen.CreateThread(function()
                 Health = Config.Strings.Dead
             else
                 Health = GetEntityHealth(PlayerPedId()) - 100
-            end
+            end  
                 
             local replacements = {
                 ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
