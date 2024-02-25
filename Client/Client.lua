@@ -30,7 +30,6 @@ Citizen.CreateThread(function()
             local job = Config.Strings.Loading
 
             if ESX.PlayerData.job ~= null then
-                print("čau")
                 job = ESX.PlayerData.job.label
             end
   
