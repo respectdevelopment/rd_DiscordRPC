@@ -5,21 +5,21 @@ game 'gta5'
 -- {{Resouce Information}}
 author 'Respect Development'
 description 'Discord RPC'
-version '1.4'
+version '1.5'
 
 -- {{Manifest}} --
 lua54 'yes'
 
 shared_scripts {
-    'Config.lua'
+    'shared/config.lua'
 }
 
 client_scripts {
-    'Client/Client.lua'
+    'client/main.lua'
 }
 
 server_scripts {
-    'Server/Server.lua'
+    'server/main.lua'
 }
 
 
