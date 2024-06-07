@@ -1,29 +1,45 @@
+local loaded = false
+
+
 if Config.Framework == "esx" then
     ESX = exports["es_extended"]:getSharedObject()
+
+    RegisterNetEvent('esx:playerLoaded')
+    AddEventHandler('esx:playerLoaded',function(xPlayer)
+        ESX.PlayerData = xPlayer
+        loaded = true
+    end)
+
 elseif Config.Framework == "qb" then
     QBCore = exports['qb-core']:GetCoreObject()
+
+    RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+        loaded = true
+    end)
 end
+
 
 Citizen.CreateThread(function()
     while true do
 
         if Config.Framework == "esx" then
 
-            if ESX.IsPlayerLoaded() then
+            print(loaded)
+            if loaded then
 
                 local replacements = {
-                    ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
-                    ["{PlayerID}"] = GetPlayerServerId(PlayerId()),
-                    ["{PlayerName}"] = GetPlayerName(PlayerId()),
+                    ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48) or "-",
+                    ["{PlayerID}"] = GetPlayerServerId(PlayerId()) or "-",
+                    ["{PlayerName}"] = GetPlayerName(PlayerId()) or "-",
                     ["{FirstName}"] = ESX.PlayerData.firstName,
                     ["{LastName}"] = ESX.PlayerData.lastName,
                     ["{Job}"] = ESX.PlayerData.job.label,
                     ["{DateOfBirth}"] = ESX.PlayerData.dateofbirth,
-                    ["{Health}"] = GetEntityHealth(PlayerPedId()),
+                    ["{Health}"] = GetEntityHealth(PlayerPedId()) or "-",
                     ["{Armour}"] = GetPedArmour(PlayerPedId()),
-                    ["{Street}"] = GetStreetNameFromHashKey(GetStreetNameAtCoord(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
-                    ["{Area}"] = GetLabelText(GetNameOfZone(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
-                    ["{fps}"] = math.floor(1.0 / GetFrameTime())
+                    ["{Street}"] = GetStreetNameFromHashKey(GetStreetNameAtCoord(table.unpack(GetEntityCoords(PlayerPedId(), true)))) or "-",
+                    ["{Area}"] = GetLabelText(GetNameOfZone(table.unpack(GetEntityCoords(PlayerPedId(), true)))) or "-",
+                    ["{fps}"] = math.floor(1.0 / GetFrameTime()) or "-"
                 }
                      
                 local result = Config.Text:gsub("{(.-)}", function(key)
@@ -36,15 +52,11 @@ Citizen.CreateThread(function()
 
                 DiscordStatus("Loading..")
 
-            end           
+            end
 
         elseif Config.Framework == "qb" then
- 
-            if next(QBCore.Functions.GetPlayerData()) == nil then
 
-                DiscordStatus("Loading..")
-
-            else
+            if loaded then
 
                 local replacements = {
                     ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
@@ -66,6 +78,10 @@ Citizen.CreateThread(function()
                 end)
                 
                 DiscordStatus(result)
+
+            else
+
+                DiscordStatus("Loading..")
 
             end
     
