@@ -9,11 +9,7 @@ Citizen.CreateThread(function()
 
         if Config.Framework == "esx" then
 
-            if next(ESX.PlayerData) == nil then
-
-                DiscordStatus("Loading..")
-
-            else
+            if ESX.IsPlayerLoaded() then
 
                 local replacements = {
                     ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
@@ -35,6 +31,10 @@ Citizen.CreateThread(function()
                 end)
                 
                 DiscordStatus(result)
+
+            else
+
+                DiscordStatus("Loading..")
 
             end           
 
