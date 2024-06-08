@@ -24,22 +24,21 @@ Citizen.CreateThread(function()
 
         if Config.Framework == "esx" then
 
-            print(loaded)
             if loaded then
-
+                    
                 local replacements = {
-                    ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48) or "-",
-                    ["{PlayerID}"] = GetPlayerServerId(PlayerId()) or "-",
-                    ["{PlayerName}"] = GetPlayerName(PlayerId()) or "-",
+                    ["{ServerPlayers}"] = #GetActivePlayers() .. "/" ..GetConvarInt("sv_maxClients", 48),
+                    ["{PlayerID}"] = GetPlayerServerId(PlayerId()),
+                    ["{PlayerName}"] = GetPlayerName(PlayerId()),
                     ["{FirstName}"] = ESX.PlayerData.firstName,
                     ["{LastName}"] = ESX.PlayerData.lastName,
                     ["{Job}"] = ESX.PlayerData.job.label,
                     ["{DateOfBirth}"] = ESX.PlayerData.dateofbirth,
-                    ["{Health}"] = GetEntityHealth(PlayerPedId()) or "-",
+                    ["{Health}"] = GetEntityHealth(PlayerPedId()),
                     ["{Armour}"] = GetPedArmour(PlayerPedId()),
-                    ["{Street}"] = GetStreetNameFromHashKey(GetStreetNameAtCoord(table.unpack(GetEntityCoords(PlayerPedId(), true)))) or "-",
-                    ["{Area}"] = GetLabelText(GetNameOfZone(table.unpack(GetEntityCoords(PlayerPedId(), true)))) or "-",
-                    ["{fps}"] = math.floor(1.0 / GetFrameTime()) or "-"
+                    ["{Street}"] = GetStreetNameFromHashKey(GetStreetNameAtCoord(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
+                    ["{Area}"] = GetLabelText(GetNameOfZone(table.unpack(GetEntityCoords(PlayerPedId(), true)))),
+                    ["{fps}"] = math.floor(1.0 / GetFrameTime())
                 }
                      
                 local result = Config.Text:gsub("{(.-)}", function(key)
